@@ -10,11 +10,9 @@ body{
     display:flex;
     justify-content:center;
     align-items:center;
-    background:#000;
+    background:linear-gradient(135deg,#007BFF,#56A8FF);
     padding:20px;
 }
-
-Ou, se preferir um degradê d
 
 .container{
     width:90%;
@@ -26,30 +24,67 @@ Ou, se preferir um degradê d
 }
 
 h1{
-    color:#000;
+    text-align:center;
+    color:#007BFF;
+    margin-bottom:25px;
+    font-size:32px;
+}
+
+.input-area{
+    display:flex;
+    gap:10px;
 }
 
 input{
-    border:2px solid #000;
+    flex:1;
+    padding:16px;
+    border:2px solid #007BFF;
+    border-radius:10px;
+    outline:none;
+    font-size:17px;
 }
 
 input:focus{
-    border-color:#555;
+    border-color:#0056d6;
 }
 
 #addButton{
-    background:#000;
+    background:#007BFF;
     color:#fff;
+    border:none;
+    padding:16px 22px;
+    border-radius:10px;
+    cursor:pointer;
+    transition:.3s;
+    font-weight:bold;
+    font-size:16px;
 }
 
 #addButton:hover{
-    background:#333;
+    background:#005ed8;
+}
+
+ul{
+    list-style:none;
+    margin-top:30px;
 }
 
 li{
-    background:#fff;
-    border-left:5px solid #000;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#f5f9ff;
+    border-left:5px solid #007BFF;
+    padding:16px;
+    margin-bottom:14px;
+    border-radius:10px;
+    transition:.3s;
 }
+
+li:hover{
+    transform:translateX(5px);
+}
+
 .task{
     flex:1;
     margin-right:10px;
@@ -109,4 +144,5 @@ li{
         width:100%;
     }
 }
+
 
